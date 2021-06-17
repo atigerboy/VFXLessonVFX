@@ -191,7 +191,7 @@ VisualEffect:
   m_GameObject: {fileID: 1460249812}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 9bbcaf99cd2c9464f980cc9a017965fa, type: 3}
-  m_InitialEventName: 0
+  m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c1ce4fb46143f46bc5cb5224c934f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearColorMode: 2
+  clearColorMode: 1
   backgroundColorHDR: {r: 0.0009765625, g: 0.00097195606, b: 0.00097195606, a: 1}
   clearDepth: 1
   volumeLayerMask:
