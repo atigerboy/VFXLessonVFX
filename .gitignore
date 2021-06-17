@@ -10,10 +10,11 @@ Desktop.ini
 /.vscode
 /*.csproj
 /*.sln
-/*.vs
+/.vs
 *.swp
 *.vcxproj.user
 *.vsconfig
+/obj
 
 # Unity
 /Library
