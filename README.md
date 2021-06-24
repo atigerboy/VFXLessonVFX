@@ -27,6 +27,9 @@ visual effect graph 使用的11.0版本
 8. output particle strip quad 这个renderer，可以指定 uv的连续方式 在tiling mode中选中custom 出现TexCoord，可以在里面设置，默认行为是v方向使用age over life，表现等同stretch，如果要参照其他的参数，可以使用custom模式自己设置Texcoord即可。
 9. connect to target也是一种决定朝向的方式，注意虽然它也能近似表现出连线的效果，但是线一般是断的，重叠的，通常不建议使用这个来表现连线，请使用strip 这个类型的粒子。
 10. prewarm的设置在vfx资源对象上，其中total time表示要预热的时间，step count用来表示此预热时间要分多少步完成，其中最重要的total time。
+11. [新增]mesh sample相关的模块在11.0版本属于实验功能，测试发现有两个无法测试的点（ 当surface采样时），vertex信息中比如normal，uv信息存在明显的错误。使用surface 采样做的效果多少都有点问题。用vetex 模式采样的时候，uv信息也是有问题的。
+12. 在output context里面get oldposition会发现读取数据无效的情况，需要自己定义custom attribute来处理这个部分
+13. sample mesh 采样vetex模块的时候 如果vertex index时从index里面推算过来的，需要调用sample mesh index来转换。
 
 
 ## 示例说明（简短）
